@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <meta name="author" content="Bryan Montgomery Hamilton">
+  <meta name="keywords" content="200021401, javascript">
+  <meta name="description" content="Atividade sobre javascript">
+
+  <script>
+    function tabuada(a) {
+      for (L = 1; L <= 10; L++) {
+        document.getElementById(
+          "paragraph_" + L
+        ).innerHTML = a + " * " + L + " = " + a * L
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <label for="numero">Calcular Tabuada de:</label><br>
+  <input type="number" id="a"><br>
+  <button onclick="tabuada(document.getElementById('a').value)">
+    Calcular
+  </button>
+
+  <p id="paragraph_1"></p>
+  <p id="paragraph_2"></p>
+  <p id="paragraph_3"></p>
+  <p id="paragraph_4"></p>
+  <p id="paragraph_5"></p>
+  <p id="paragraph_6"></p>
+  <p id="paragraph_7"></p>
+  <p id="paragraph_8"></p>
+  <p id="paragraph_9"></p>
+  <p id="paragraph_10"></p>
+</body>
+
+</html>
